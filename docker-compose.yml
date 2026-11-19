@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  baibai-app:
+    build: .
+    container_name: baibai-app
+    restart: unless-stopped
+    ports:
+      - "3011:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+    networks:
+      - kopipeng-net
+
+networks:
+  kopipeng-net:
+    external: true

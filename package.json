@@ -1,0 +1,15 @@
+{
+  "name": "baibai",
+  "version": "1.0.0",
+  "description": "雲端天后宮 (Cloud Mazu Temple) - 多人同殿參拜、擲筊求籤、點光明燈",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  }
+}
